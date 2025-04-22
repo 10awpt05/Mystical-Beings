@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aswang - Philippine Mythical Creature</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('assets/bg1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  padding: 20px;
+}
+
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;    
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #8B0000;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #444;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      text-align: center;
+      color: #777;
+    }
+
+    img {
+    display: block;
+    margin: 20px auto;
+    max-width: 30%;
+    border-radius: 10px;
+    }
+
+    .slideshow-container {
+    width: 600px;         
+    height: 350px;    
+    position: relative;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .mySlides {
+    display: none;
+    }
+
+    .mySlides img {
+    width: 100%;            
+    height: 300px;         
+    object-fit: cover;      
+    border-radius: 12px;    
+    }
+
+    .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+    from { opacity: 0.4 } 
+    to { opacity: 1 }
+    }
+
+    .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+    }
+
+    .active {
+    background-color: #717171;
+    }
+
+
+  </style>
+</head> 
+<body>
+
+  <div class="container">
+    <h1>Aswang</h1>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="assets/aswang1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="assets/Aswang2.webp" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="assets/aswang3.jpg" style="width:100%">
+        </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+    <p><strong>Overview:</strong> The <em>Aswang</em> is a shape-shifting creature in Philippine folklore, feared for its ability to appear human by day and turn into a monstrous predator by night. It is known for feeding on flesh and blood, especially targeting vulnerable individuals.</p>
+
+    
+        
+    <h2>Forms and Variations</h2>
+    <ul>
+      <li><strong>Human Form (Day):</strong> Blends into society as a quiet and ordinary individual.</li>
+      <li><strong>Monster Form (Night):</strong> Transforms into creatures such as bats, boars, birds, or even headless ghouls.</li>
+      <li><strong>Viscera Sucker:</strong> The upper body detaches and flies, feeding on unborn children using a long tongue.</li>
+    </ul>
+
+    <h2>Abilities</h2>
+    <ul>
+      <li>Shape-shifting into animals or monsters</li>
+      <li>Superhuman strength and stealth at night</li>
+      <li>Silent movement and the ability to fly (in some variants)</li>
+      <li>Use of a long, proboscis-like tongue to feed on blood or fetuses</li>
+    </ul>
+
+    <h2>Targets</h2>
+    <ul>
+      <li>Pregnant women</li>
+      <li>The sick or dying</li>
+      <li>Newborn infants</li>
+      <li>Lonely travelers or people outside at night</li>
+    </ul>
+
+    <h2>Weaknesses & Protection</h2>
+    <ul>
+      <li>Garlic, salt, holy water, and religious items</li>
+      <li>Stingray tail whips (buntot pagi), silver weapons</li>
+      <li>Blessed daggers or bolos</li>
+      <li>Oil that bubbles when an Aswang is near</li>
+    </ul>
+
+    <h2>Cultural Role</h2>
+    <p>Stories of the Aswang have been passed down through generations to warn children about wandering off at night. In provinces like Capiz and Iloilo, belief in Aswang still exists and remains a part of local superstition and oral tradition.</p>
+
+    <div class="footer">
+      &copy; 2025 Mystical Beings of the Philippines
+    </div>
+  </div>
+
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+    
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+    
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }    
+    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+    
+      slides[slideIndex - 1].style.display = "block";  
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); 
+    }
+    </script>
+    
+</body>
+</html>

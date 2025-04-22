@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mananangal - Philippine Mythical Creature</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('assets/bg1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;    
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #8B0000;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #444;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      text-align: center;
+      color: #777;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 30%;
+      border-radius: 10px;
+    }
+
+    .slideshow-container {
+      width: 600px;         
+      height: 350px;    
+      position: relative;
+      margin: auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;            
+      height: 300px;         
+      object-fit: cover;      
+      border-radius: 12px;    
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4 } 
+      to { opacity: 1 }
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.4s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+  </style>
+</head> 
+<body>
+
+  <div class="container">
+    <h1>Mananangal</h1>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="assets/mananangal1.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="assets/mananangal2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="assets/mananangal3.jpg" style="width:100%">
+      </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <p><strong>Overview:</strong> The <em>Mananangal</em> is a mythical creature from Philippine folklore, often depicted as a woman who can split her body in half. The top half of her body detaches from the lower half, and she can fly around at night, seeking victims, often those who are pregnant.</p>
+
+    <h2>Physical Description</h2>
+    <ul>
+      <li>Upper body detaches from lower body at night</li>
+      <li>Appears as a beautiful woman by day, with a horrific transformation at night</li>
+      <li>Has bat-like wings that allow her to fly</li>
+    </ul>
+
+    <h2>Abilities</h2>
+    <ul>
+      <li>Separation of the upper and lower body</li>
+      <li>Flight at night using bat-like wings</li>
+      <li>Ability to suck blood or consume flesh, especially from pregnant women</li>
+    </ul>
+
+    <h2>Weaknesses</h2>
+    <ul>
+      <li>Garlic and salt are believed to repel her</li>
+      <li>She can be destroyed if her lower body is found and salt is poured over it while she is flying</li>
+      <li>Religious symbols and holy water are effective against her</li>
+    </ul>
+
+    <h2>Cultural Significance</h2>
+    <p>The Mananangal is one of the most feared creatures in Philippine folklore, especially in rural areas. The myth of the Mananangal serves as a cautionary tale for pregnant women, warning them to be careful at night. The Mananangal is also an emblem of betrayal, as she often appears as a woman to lure her victims before attacking them.</p>
+
+    <div class="footer">
+      &copy; 2025 Mystical Beings of the Philippines
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+    
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+    
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }    
+    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+    
+      slides[slideIndex - 1].style.display = "block";  
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); 
+    }
+  </script>
+</body>
+</html>

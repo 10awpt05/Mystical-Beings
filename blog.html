@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Articles - Mystical Beings of the Philippines</title>
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Mystical Beings</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Creature Index</a></li>
+        <li><a href="blog.html">Blog Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#" onclick="confirmLogout()">Logout</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Mystical Beings of the Philippines</h1>
+    <p>Legends of the Supernatural – Blog Articles</p>
+  </header>
+
+  <main>
+    <div class="articles-container">
+      <div class="article-card">
+        <img src="images/tikbalang1.jpg" alt="Tikbalang">
+        <div class="article-card-content">
+          <h2>The Tikbalang: Trickster of the Trails</h2>
+          <p>The Tikbalang, a half-horse, half-human creature, is known for leading travelers astray in the forests and mountains.</p>
+          <a class="read-more" href="articles/a_tikbalang.html">Read More →</a>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img src="images/manananggal2.jpg" alt="Manananggal">
+        <div class="article-card-content">
+          <h2>Manananggal: The Winged Terror of the Night</h2>
+          <p>The Manananggal is a vampire-like creature that separates her upper body and flies into the night, preying on the vulnerable.</p>
+          <a class="read-more" href="#">Read More →</a>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img src="images/kapre2.jpg" alt="Kapre">
+        <div class="article-card-content">
+          <h2>Kapre: Guardian or Menace?</h2>
+          <p>The Kapre is a giant tree-dwelling creature that has been both feared and revered in Filipino folklore.</p>
+          <a class="read-more" href="#">Read More →</a>
+        </div>
+      </div>
+
+      <div class="article-card">
+        <img src="images/aswang2.jpg" alt="Aswang">
+        <div class="article-card-content">
+          <h2>Aswang: Evolution of a Shape-shifter</h2>
+          <p>From a ghoul to a vampire and witch, the Aswang has evolved in the Filipino imagination.</p>
+          <a class="read-more" href="#">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Mystical Beings of the Philippines. All rights reserved.</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script>
+    function confirmLogout() {
+    let confirmAction = confirm("Are you sure you want to logout?");
+    if (confirmAction) {
+      window.location.href = "landing.html";
+    }
+  }
+  </script>
+</body>
+</html>

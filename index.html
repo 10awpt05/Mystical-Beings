@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creature Index - Mystical Beings of the Philippines</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('images/bg2.jpg'); 
+      background-size: cover;
+      background-position: center; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Mystical Beings</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Creature Index</a></li>
+        <li><a href="blog.html">Blog Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#" onclick="confirmLogout()">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="creature-index">
+    <h2><span style="color: red;" >C</span>reature Index</h2>
+
+    <p>Explore the legendary supernatural beings from Philippine folklore. Click on the buttons to learn more about each creature.</p>
+
+
+        <input
+      type="text"
+      id="searchInput"
+      placeholder="Search for a creature..."
+      style="padding: 10px; width: 100%; max-width: 400px; margin: 20px auto; display: block; border-radius: 5px; border: 1px solid #ccc;"
+    />
+
+    <div class="alphabet-filter" style="display: flex; justify-content: center;">
+      <button onclick="filterByLetter('A')">A</button>
+      <button onclick="filterByLetter('B')">B</button>
+      <button onclick="filterByLetter('C')">C</button>
+      <button onclick="filterByLetter('D')">D</button>
+      <button onclick="filterByLetter('E')">E</button>
+      <button onclick="filterByLetter('F')">F</button>
+      <button onclick="filterByLetter('G')">G</button>
+      <button onclick="filterByLetter('H')">H</button>
+      <button onclick="filterByLetter('I')">I</button>
+      <button onclick="filterByLetter('J')">J</button>
+      <button onclick="filterByLetter('K')">K</button>
+      <button onclick="filterByLetter('L')">L</button>
+      <button onclick="filterByLetter('M')">M</button>
+      <button onclick="filterByLetter('N')">N</button>
+      <button onclick="filterByLetter('O')">O</button>
+      <button onclick="filterByLetter('P')">P</button>
+      <button onclick="filterByLetter('Q')">Q</button>
+      <button onclick="filterByLetter('R')">R</button>
+      <button onclick="filterByLetter('S')">S</button>
+      <button onclick="filterByLetter('T')">T</button>
+      <button onclick="filterByLetter('U')">U</button>
+      <button onclick="filterByLetter('V')">V</button>
+      <button onclick="filterByLetter('W')">W</button>
+      <button onclick="filterByLetter('X')">X</button>
+      <button onclick="filterByLetter('Y')">Y</button>
+      <button onclick="filterByLetter('Z')">Z</button>
+      <button onclick="filterByLetter('All')">All</button>
+    </div>
+    
+    
+
+    <div class="creature-list">
+      <div class="creature-item">
+        <img src="images/aswang.jpg" alt="Aswang" class="creature-image" />
+        <h3><a href="aswang.html">Aswang</a></h3>
+        <p>The Aswang is a shape-shifting creature, often depicted as a vampire or witch, known for preying on the living. It has various regional forms and myths surrounding its behavior.</p>
+        <a href="indexes/aswang.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/manananggal.jpg" alt="Manananggal" class="creature-image" />
+        <h3><a href="manananggal.html">Manananggal</a></h3>
+        <p>The Manananggal is a terrifying, vampire-like creature that separates its upper body from the lower body to fly and feed on blood at night.</p>
+        <a href="indexes/mananangal.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/tikbalang.webp" alt="Tikbalang" class="creature-image" />
+        <h3><a href="tikbalang.html">Tikbalang</a></h3>
+        <p>The Tikbalang is a half-human, half-horse creature known to mislead travelers into getting lost. Its playful nature is often mistaken for malice.</p>
+        <a href="indexes/tikbalang.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/kapre.jpg" alt="Kapre" class="creature-image" />
+        <h3><a href="kapre.html">Kapre</a></h3>
+        <p>The Kapre is a giant, tree-dwelling creature, often seen smoking a large cigar. It is known to be mischievous, playing pranks on unsuspecting travelers.</p>
+        <a href="indexes/kapre.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/tiyanak.jpg" alt="Tiyanak" class="creature-image" />
+        <h3><a href="tiyanak.html">Tiyanak</a></h3>
+        <p>The Tiyanak is a creature that takes the form of a baby to lure people, often crying in distress before revealing its true monstrous nature.</p>
+        <a href="indexes/tiyanak.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/diwata.jpg" alt="Tiyanak" class="creature-image" />
+        <h3><a href="diwata.html">Diwata</a></h3>
+        <p>A type of nature spirit or deity in Filipino mythology, often connected to the forests, mountains, and seas. They are generally benevolent, but some can be vengeful if offended.</p>
+        <a href="indexes/diwata.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/balbal.jpg" alt="Balbal" class="creature-image" />
+        <h3><a href="balbal.html">Balbal</a></h3>
+        <p>A creature that consumes human flesh, often appearing as a human by day and a monster by night. It’s said to feed on the dead or dying.</p>
+        <a href="indexes/balbal.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/sigbin.jpg" alt="Sigbin" class="creature-image" />
+        <h3><a href="sigbin.html">Sigbin</a></h3>
+        <p>A nocturnal creature that resembles a hornless goat or a dog, with glowing eyes and a long, flexible tail. It is believed to suck the blood of its victims.</p>
+        <a href="indexes/sigbin.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/nuno-sa-punso.jpg" alt="Nuno sa Punso" class="creature-image" />
+        <h3><a href="nuno-sa-punso.html">Nuno sa Punso</a></h3>
+        <p>A dwarf-like creature that lives in mounds or anthills. Disturbing its home can lead to illness or misfortune.</p>
+        <a href="indexes/nuno-sa-punso.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/mangkukulam.jpg" alt="Mangkukulam" class="creature-image" />
+        <h3><a href="mangkukulam.html">Mangkukulam</a></h3>
+        <p>A witch or sorceress who uses black magic to curse others. Known for summoning spirits and casting harmful spells.</p>
+        <a href="indexes/mangkukulam.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/bakunawa.jpg" alt="Bakunawa" class="creature-image" />
+        <h3><a href="bakunawa.html">Bakunawa</a></h3>
+        <p>A sea serpent or dragon-like creature believed to cause eclipses by swallowing the moon. It has glowing eyes and a hunger for celestial bodies.</p>
+        <a href="indexes/bakunawa.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/white-lady.jpg" alt="White Lady" class="creature-image" />
+        <h3><a href="white-lady.html">White Lady (Dama de Blanco)</a></h3>
+        <p>A ghostly apparition of a woman in white. She haunts roads and bridges, and sometimes lures victims to their deaths.</p>
+        <a href="indexes/white-lady.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/bungisngis.jpg" alt="Bungisngis" class="creature-image" />
+        <h3><a href="bungisngis.html">Bungisngis</a></h3>
+        <p>A giant with a huge mouth and loud laugh, often creating harmless havoc and known for its mischievous nature.</p>
+        <a href="indexes/bungisngis.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/basilisco.jpg" alt="Basilisco" class="creature-image" />
+        <h3><a href="basilisco.html">Basilisco</a></h3>
+        <p>A serpent-like creature with the ability to turn people to stone with its deadly gaze. Often depicted as a gigantic snake or dragon.</p>
+        <a href="indexes/basilisco.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/pugot.jpg" alt="Pugot" class="creature-image" />
+        <h3><a href="pugot.html">Pugot</a></h3>
+        <p>A headless creature associated with haunted places, believed to be a vengeful spirit punishing trespassers.</p>
+        <a href="indexes/pugot.html" class="more-details-btn">Learn More</a>
+      </div>
+
+
+      <div class="creature-item">
+        <img src="images/la-llorona.avif" alt="La Llorona" class="creature-image" />
+        <h3><a href="la-llorona.html">La Llorona</a></h3>
+        <p>The "Weeping Woman" who mourns her lost children. She roams near water, seeking others to replace them.</p>
+        <a href="indexes/la-llorona.html" class="more-details-btn">Learn More</a>
+      </div>
+      
+
+      <div class="creature-item">
+        <img src="images/bathala.png" alt="Bathala" class="creature-image" />
+        <h3><a href="bathala.html">Bathala</a></h3>
+        <p>The supreme god in Tagalog mythology. While not a creature in the traditional sense, Bathala is a benevolent deity that governs the heavens and is associated with creation and protection.</p>
+        <a href="indexes/bathala.html" class="more-details-btn">Learn More</a>
+      </div>
+
+      <div class="creature-item">
+        <img src="images/duwende.jpg" alt="Duwende" class="creature-image" />
+        <h3><a href="duwende.html">Duwende</a></h3>
+        <p>Small, dwarf-like creatures that live in homes or gardens. They can either be kind or mischievous, but they tend to favor people who respect nature and their surroundings.</p>
+        <a href="indexes/duwende.html" class="more-details-btn">Learn More</a>
+      </div>
+      
+      
+
+      
+
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Mystical Beings of the Philippines. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+      const filter = this.value.toLowerCase();
+      const creatures = document.querySelectorAll('.creature-item');
+  
+      creatures.forEach(creature => {
+        const title = creature.querySelector('h3').textContent.toLowerCase();
+        const description = creature.querySelector('p').textContent.toLowerCase();
+  
+        if (title.includes(filter) || description.includes(filter)) {
+          creature.style.display = '';
+        } else {
+          creature.style.display = 'none';
+        }
+      });
+    });
+
+    function filterCreatures() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const creatures = document.querySelectorAll(".creature-item");
+
+    creatures.forEach(creature => {
+      const name = creature.querySelector("h3").textContent.toLowerCase();
+      creature.style.display = name.includes(input) ? "block" : "none";
+    });
+  }
+
+  function filterByLetter(letter) {
+    const creatures = document.querySelectorAll(".creature-item");
+
+    creatures.forEach(creature => {
+      const name = creature.querySelector("h3").textContent.toUpperCase();
+
+      if (letter === "All" || name.startsWith(letter)) {
+        creature.style.display = "block";
+      } else {
+        creature.style.display = "none";
+      }
+    });
+
+    document.getElementById("searchInput").value = "";
+  }
+  function confirmLogout() {
+    let confirmAction = confirm("Are you sure you want to logout?");
+    if (confirmAction) {
+      window.location.href = "landing.html";
+    }
+  }
+  </script>
+  
+  <script src="js/nav.js"></script>
+</body>
+</html>
