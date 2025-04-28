@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="css/nav.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+  <link rel="stylesheet" href="css/font.css" />
+  <link rel="stylesheet" href="css/footer.css" />
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    
+    .main {
       margin: 0;
       padding: 0;
       background: #f8f4ef;
@@ -21,14 +22,29 @@
       align-items: center;
       text-align: center;
       min-height: 100vh;
+      
     }
-
+    
     header {
-      background: #401a1a;
-      color: #fff;
-      padding: 2rem 1rem;
-      width: 100%;
-    }
+      background-color: #401a1a;
+      color: white;
+      text-align: center;
+      padding: 50px 20px 30px;
+      margin-bottom: 0;
+      }
+
+  header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 400;
+  }
 
     section {
       max-width: 1000px;
@@ -70,13 +86,6 @@
       border-radius: 10px;
       padding: 20px;
       margin-top: 40px;
-    }
-
-    footer {
-      background: #2f1e1e;
-      color: white;
-      padding: 1rem;
-      width: 100%;
     }
 
     .mission-vision {
@@ -127,13 +136,15 @@
 <body>
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">Mystical Beings</div>
+      <div class="logo">
+        <img src="images/image-removebg-preview.png" class="bav-logo">
+      </div>
       <div class="menu-toggle" id="mobile-menu">
         <i class="fas fa-bars"></i>
       </div>
       <ul class="nav-links" id="nav-links">
         <li><a href="home.html">Home</a></li>
-        <li><a href="index.html">Creature Index</a></li>
+        <li><a href="creature.html">Creature Index</a></li>
         <li><a href="blog.html">Blog Articles</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="faq.html">FAQ</a></li>
@@ -143,11 +154,12 @@
   </nav>
 
   <header>
-    <h1 style="margin-top: 100px;">Mystical Beings of the Philippines</h1>
+    <h1 >Mystical Beings of the Philippines</h1>
     <p>Legends of the Supernatural</p>
   </header>
+<div class="main">
+      <img src="images/logo-mystical.png" style="display: flex; justify-content: center;" alt="logo">
 
-  <img src="images/logo-mystical.png" style="display: flex; justify-content: center;" alt="logo">
   <section>
     <h2><span style="color: red; font-size: larger;">I</span>ntroduction</h2>
     <p style="text-align: justify;">
@@ -191,10 +203,16 @@
     <p><strong>Facebook:</strong> fb.com/MysticalBeingsPH</p>
     <p><strong>Instagram:</strong> @mysticalbeingsph</p>
   </section>
+</div>
 
-  <footer>
-    <p>© 2025 Mystical Beings of the Philippines. All rights reserved.</p>
-  </footer>
+<footer class="footer">
+  <div class="footer-left">
+    <img src="images/USER_1_-removebg-preview.png" alt="Logo" class="footer-logo">
+  </div>
+  <div class="footer-right">
+    © 2025 Your Company. All rights reserved.
+  </div>
+</footer>
 
   <script src="js/nav.js"></script>
   <script>

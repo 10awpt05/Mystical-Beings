@@ -98,53 +98,7 @@ main {
   background-color: #633636;
 }
 
-.footer {
-  background-color: #2f1e1e;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 0;
-}
 
-.navbar {
-  background-color: #3a3a3a;
-  padding: 1rem 20px;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.logo {
-  font-size: 1.5rem;
-  color: white;
-  font-weight: 600;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #ff6347;
-}
-
-.menu-toggle {
-  display: none;
-}
 
 @media (max-width: 768px) {
   .nav-links {

@@ -153,6 +153,33 @@ ul {
   font-size: 1.1rem;
 }
 
+
+.contact-us {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.contact-details p {
+  margin: 8px 0;
+}
+
+.contact-details i {
+  margin-right: 8px;
+  color: #555;
+}
+
+
 @media (max-width: 768px) {
   
 
@@ -214,3 +241,4 @@ ul {
     font-size: 1.6rem;
   }
 }
+
